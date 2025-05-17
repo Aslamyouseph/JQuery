@@ -8,4 +8,10 @@ $(document).ready(function () {
   $(".button2").on("click", function () {
     $(".heading2").css("color", "blue");
   });
+
+  //Removing the particular text
+  $(".button3").on("click", function () {
+    // $(".heading3").remove(); // In here the text remove very fast
+    $(".heading3").fadeOut(); // In here the text remove smoother
+  });
 });
